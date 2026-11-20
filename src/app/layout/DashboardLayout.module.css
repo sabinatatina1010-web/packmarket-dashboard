@@ -1,0 +1,46 @@
+.layout {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: var(--space-page);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.brandBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.subtitle {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 767px) {
+  .layout {
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .brand {
+    font-size: 20px;
+  }
+}
